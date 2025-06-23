@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "First Post",
+      "content": "The only way to do great work is to love what you do.",
+      "author": "Jack Mungai"
+    },
+    {
+      "id": 2,
+      "title": "Second Post",
+      "content": "In the end, its not the years in your life  that count. Its the life in your years.",
+      "author": "Joseph Ndungu"
+    },
+    {
+      "id": 3,
+      "title": "Third Post",
+      "content": "Believe you can and you are halfway there.",
+      "author": "James Kihara"
+    },
+    {
+      "title": "Fourth Post",
+      "content": "The future belongs to those who believe in the beauty of their dreams.",
+      "author": "Florence Nyambura",
+      "id": 4
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+/* Base body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Sidebar for post list */
+#post-list {
+    width: 30%;
+    float: left;
+    padding: 20px;
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* Remove default list styles for post list */
+#post-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style for each post item in the list */
+#post-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+/* Hover effect for post items */
+#post-list li:hover {
+    background-color: #e9e9e9;
+}
+
+/* Main detail section for selected post */
+#post-detail {
+    width: 70%;
+    float: left;
+    padding: 20px;
+}
+
+/* Styles for both new and edit post forms */
+#new-post-form, #edit-post-form {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+/* Utility class to hide elements */
+.hidden {
+    display: none;
+}
+
+/* General button styles */
+button {
+    margin-top: 10px;
+}
+
+/* Button hover effect */
+button:hover {
+    opacity: 0.8;
+}
