@@ -1,53 +1,149 @@
 /* Base body styles */
-body {
-    font-family: Arial, sans-serif;
+.body {
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f6fa;
+    color: #222;
+}
+
+/* App container */
+#app {
+    max-width: 1100px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 30px 20px 40px 20px;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+}
+
+/* Layout for post list and detail */
+#post-container {
+    display: flex;
+    gap: 30px;
 }
 
 /* Sidebar for post list */
 #post-list {
     width: 30%;
-    float: left;
-    padding: 20px;
-    background-color: #fff;
-    border-right: 1px solid #ccc;
-    height: 100vh;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 20px 15px;
+    height: 70vh;
     overflow-y: auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+#post-list h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 15px;
 }
 
 /* Remove default list styles for post list */
 #post-list ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 /* Style for each post item in the list */
-#post-list li {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+#post-list div, #post-list li {
+    padding: 12px 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
     cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    font-size: 1.05rem;
 }
 
-/* Hover effect for post items */
-#post-list li:hover {
-    background-color: #e9e9e9;
+#post-list div:hover, #post-list li:hover {
+    background-color: #e3eafc;
+    color: #1a237e;
 }
 
 /* Main detail section for selected post */
 #post-detail {
     width: 70%;
-    float: left;
-    padding: 20px;
+    background: #f9fafb;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 25px 20px;
+    min-height: 300px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+#post-detail h2 {
+    margin-top: 0;
+    color: #1a237e;
+}
+
+#post-detail p {
+    font-size: 1.08rem;
+    margin-bottom: 10px;
+}
+
+#post-detail button {
+    margin-right: 10px;
 }
 
 /* Styles for both new and edit post forms */
 #new-post-form, #edit-post-form {
-    margin-top: 20px;
-    background-color: #fff;
-    padding: 15px;
-    border: 1px solid #ccc;
+    margin-top: 30px;
+    background-color: #f9fafb;
+    padding: 20px 18px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+#new-post-form h2, #edit-post-form h4 {
+    margin-top: 0;
+    color: #2c3e50;
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #34495e;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px 8px;
+    margin-bottom: 15px;
+    border: 1px solid #bfc9d1;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #fff;
+    transition: border 0.2s;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border: 1.5px solid #1a73e8;
+    outline: none;
+    background: #f0f7ff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 70px;
 }
 
 /* Utility class to hide elements */
@@ -57,10 +153,60 @@ body {
 
 /* General button styles */
 button {
-    margin-top: 10px;
+      margin-top: 10px;
+    background: #1a73e8;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 4px rgba(26,115,232,0.08);
 }
 
-/* Button hover effect */
-button:hover {
-    opacity: 0.8;
+button:hover, .bg-blue-500:hover {
+    background: #174ea6;
+    opacity: 0.95;
+}
+
+.bg-gray-400 {
+    background: #b0b8c1 !important;
+}
+
+.bg-gray-400:hover, .bg-gray-600:hover {
+    background: #6c757d !important;
+}  
+
+.bg-blue-500 {
+    background: #1a73e8 !important;
+}
+
+.bg-blue-700 {
+    background: #174ea6 !important;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+    #post-container {
+        flex-direction: column;
+    }
+    #post-list, #post-detail {
+        width: 100%;
+        margin-bottom: 20px;
+        min-height: unset;
+    }
+}
+
+@media (max-width: 600px) {
+    #app {
+        padding: 10px 2px;
+    }
+    #new-post-form, #edit-post-form {
+        padding: 12px 5px;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
 }
