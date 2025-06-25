@@ -13,16 +13,20 @@ function displayPosts() {
         .then(response => response.json())
         .then(posts => {
             const postList = document.getElementById("post-list");
-            postList.innerHTML = "";
+            postList.innerHTML = "<h2>Posts</h2>"; // Keep the heading
             posts.forEach(post => {
                 const postItem = document.createElement("div");
-                postItem.textContent = post.title;
+                // Show title and category
+                postItem.innerHTML = `
+                    <strong>${post.title}</strong>
+                    <span style="color:#6366f1; font-size:0.95em; margin-left:8px;">[${post.category || "Uncategorized"}]</span>
+                `;
                 // Add click event to show post details when a title is clicked
                 postItem.addEventListener("click", () => handlePostClick(post.id));
                 postList.appendChild(postItem);
             });
         });
-        }
+}
 
 // Fetch and display details for a single post by ID
 function handlePostClick(postId) {
@@ -32,6 +36,7 @@ function handlePostClick(postId) {
             const postDetail = document.getElementById("post-detail");
             postDetail.innerHTML = `
                 <h2>${post.title}</h2>
+                <p><strong>Category:</strong> ${post.category || "Uncategorized"}</p>
                 <p>${post.content}</p>
                 <p><strong>Author:</strong> ${post.author}</p>
                 <button id="edit-post">Edit</button>
@@ -52,7 +57,8 @@ function addNewPostListener() {
         const title = newPostForm.title.value;
         const content = newPostForm.content.value;
         const author = newPostForm.author.value;
-        const newPost = { title, content, author };
+        const category = newPostForm.category.value; 
+        const newPost = { title, content, author, category };
         addNewPost(newPost);
     });
 }
