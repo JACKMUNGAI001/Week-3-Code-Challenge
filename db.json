@@ -5,34 +5,39 @@
       "title": "Exploring the Maasai Mara",
       "content": "The vast Masai Mara National Reserve spans approximately 1,510 square kilometres. Named for the Maasai tribe, the south-western Kenya location has the world-famous Serengeti Park forming the southern border. The terrain consists of clumps of trees, shrubbery and open savannahs. The popular location provides the chance to experience authentic wildlife safaris on land, water or by air",
       "author": "Uyaphi.com",
-      "category": "Travel"
+      "category": "Travel",
+      "image": "https://s3.amazonaws.com/cdn.micato.com/wp-content/uploads/2018/09/07223907/maasai-mara-1110x700.jpg"
     },
     {
       "id": 2,
       "title": "CultureGado’s Pen Strikes Again: A Bold New Book from Africa’s Most Fearless Cartoonist",
       "content": "Godfrey “Gado” Mwampembwa is no stranger to controversy. For over two decades, his cartoons have unsettled presidents, poked holes in power structures, and given voice to the frustrations of the everyday mwananchi — always with wit, clarity, and daring. Now, with the release of his new book, Hustler Vs. Gen Z, Gado offers a sharp, visual chronicle of East African politics and power struggles, captured through the lens of his signature satire.",
       "author": "Churchill Osimbo",
-      "category": "Culture"
+      "category": "Culture",
+      "image": "https://www.researchgate.net/publication/343428618/figure/fig3/AS:920857232809987@1596560881968/Godfrey-Mwampembwa-aka-Gado-2017-cartoons-Source-Permission-by-Gado.png"
     },
     {
       "id": 3,
-      "title": "The Brands Helping Kenyans Build Sustainable Fashion Wardrobes In 2025",
+      "title": "The Brands Helping Kenyans Build Sustainable Fashion Wardrobes In 2025", 
       "content": "Swapping that pair of denim jeans you saved and bought from Levi that no longer fits over a buzzing DJ set at yet another new joint in Nairobi while sipping on some Boba tea or pomegranate-infused cocktail seems like a wholesome way to spend a day. This is what my mind pictures happening at “The Swap Circle.” The Swap Circle, DeClutter 254, Yaga Kenya, and Rent-A-Dress Boutique are among the visionary platforms helping environmentally conscious Kenyans consume fashion ethically.",
       "author": "Leylurrland",
-      "category": "Fashion"
+      "category": "Fashion",
+      "image": "https://www.kenyanvibe.com/wp-content/uploads/2025/03/Screenshot_20250304-134641.jpg"
     },
     {
       "id": 4,
       "title": "Blankets and Wine Cancels June Festival",
-      "content": "Nairobi’s beloved Blankets and Wine Festival, originally slated for June 29, 2025, has been canceled, a decision that reflects both the organizers’ sensitivity to Kenya’s current socio-political climate and their commitment to attendee safety. In a move that demonstrates their knack for reading the room, the festival’s organizers, led by visionary founder Muthoni Ndonga, announced the cancellation on June 20, citing safety concerns amid planned nationwide demonstrations on June 25. While the decision has left fans disappointed, it underscores the festival’s deep-rooted connection to its community and its prioritization of well-being over profit. The announcement, shared via the festival’s official X account, struck a heartfelt tone: “We had high hopes for June, but the times are tender… In light of the upcoming demonstrations, we’ve made the difficult decision to cancel the June edition of Blankets & Wine. Your safety is our heartbeat .”.",
+      "content": "Nairobi’s beloved Blankets and Wine Festival, originally slated for June 29, 2025, has been canceled, a decision that reflects both the organizers’ sensitivity to Kenya’s current socio-political climate and their commitment to attendee safety. In a move that demonstrates their knack for reading the room, the festival’s organizers, led by visionary founder Muthoni Ndonga, announced the cancellation on June 20, citing safety concerns amid planned nationwide demonstrations on June 25. While the decision has left fans disappointed, it underscores the festival’s deep-rooted connection to its community and its prioritization of well-being over profit. The announcement, shared via the festival’s official X account, struck a heartfelt tone: “We had high hopes for June, but the times are tender… In light of the upcoming demonstrations, we’ve made the difficult decision to cancel the June edition of Blankets & Wine. Your safety is our heartbeat .”",
       "author": "Otieno Arudo",
-      "category": "Entertainment"
+      "category": "Entertainment",
+      "image": "https://blanketsandwine.com/kenya/wp-content/uploads/2025/03/WhatsApp-Image-2025-06-20-at-15.23.57.jpeg"
     },
     {
-      "title": "Detox the Kenyan Way: 7 Local Foods That Cleanse Your Body Naturally",
+      "title": "Detox the Kenyan Way: Local Foods That Cleanse Your Body Naturally",
       "content": "In a country where nyama choma, chips, and late-night mutura rule the streets, it’s easy to forget our bodies need a break too.\n\nWith the rise in lifestyle diseases and fatigue, more Kenyans are realizing that the best detox isn’t found in imported green juices — it’s growing right in our markets.\n\nYou don’t need fancy powders or supplements to cleanse your system. These local, affordable, and accessible foods can help your body detox naturally and leave you feeling energized.\n\n",
       "author": "Mr Samora",
       "category": "Food",
+      "image": "https://www.patientfirst.com/wp-content/uploads/detoxfoods-2.jpg",
       "id": 5
     }
   ]

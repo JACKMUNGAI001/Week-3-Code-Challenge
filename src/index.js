@@ -16,11 +16,15 @@ function displayPosts() {
             postList.innerHTML = "<h2>Posts</h2>"; // Keep the heading
             posts.forEach(post => {
                 const postItem = document.createElement("div");
-                // Show title and category
+                // Show image, title, and category
                 postItem.innerHTML = `
+                    <img src="${post.image}" alt="${post.title}" style="width:60px; height:40px; object-fit:cover; border-radius:4px; margin-right:10px; vertical-align:middle;">
                     <strong>${post.title}</strong>
                     <span style="color:#6366f1; font-size:0.95em; margin-left:8px;">[${post.category || "Uncategorized"}]</span>
                 `;
+                postItem.style.display = "flex";
+                postItem.style.alignItems = "center";
+                postItem.style.gap = "10px";
                 // Add click event to show post details when a title is clicked
                 postItem.addEventListener("click", () => handlePostClick(post.id));
                 postList.appendChild(postItem);
@@ -36,6 +40,7 @@ function handlePostClick(postId) {
             const postDetail = document.getElementById("post-detail");
             postDetail.innerHTML = `
                 <h2>${post.title}</h2>
+                <img src="${post.image}" alt="${post.title}" style="width:100%; max-width:400px; border-radius:8px; margin-bottom:15px;">
                 <p><strong>Category:</strong> ${post.category || "Uncategorized"}</p>
                 <p>${post.content}</p>
                 <p><strong>Author:</strong> ${post.author}</p>
@@ -58,7 +63,8 @@ function addNewPostListener() {
         const content = newPostForm.content.value;
         const author = newPostForm.author.value;
         const category = newPostForm.category.value; 
-        const newPost = { title, content, author, category };
+        const image = newPostForm.image ? newPostForm.image.value : ""; // If you add an image input
+        const newPost = { title, content, author, category, image };
         addNewPost(newPost);
     });
 }
