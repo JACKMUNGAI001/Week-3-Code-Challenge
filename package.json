@@ -9,6 +9,7 @@
   "license": "ISC",
   "description": "A simple web application to manage blog posts. Users can view, add, edit, and delete posts. The app uses a mock backend powered by `json-server`.",
   "dependencies": {
-    "prompt-sync": "^4.2.0"
+    "prompt-sync": "^4.2.0",
+    "json-server": "^0.17.4"
   }
 }
