@@ -9,7 +9,7 @@ function main() {
 
 // Fetch all posts from the server and display them in the #post-list div
 function displayPosts() {
-    fetch("https://week-3-code-challenge-a1ff.onrender.com/posts")
+    fetch("https://week-3-code-challenge-1-bicj.onrender.com/posts")
         .then(response => response.json())
         .then(posts => {
             const postList = document.getElementById("post-list");
@@ -34,7 +34,7 @@ function displayPosts() {
 
 // Fetch and display details for a single post by ID
 function handlePostClick(postId) {
-    fetch(`https://week-3-code-challenge-a1ff.onrender.com/posts/${postId}`)
+    fetch(`https://week-3-code-challenge-1-bicj.onrender.com/posts/${postId}`)
         .then(response => response.json())
         .then(post => {
             const postDetail = document.getElementById("post-detail");
@@ -71,7 +71,7 @@ function addNewPostListener() {
 
 // Send a POST request to add a new post, then refresh the post list
 function addNewPost(post) {
-    fetch("https://week-3-code-challenge-a1ff.onrender.com/posts", {
+    fetch("https://week-3-code-challenge-1-bicj.onrender.com/posts", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -110,7 +110,7 @@ function updatePost(postId) {
     const content = document.getElementById("edit-content").value;
     const updatedPost = { title, content };
 
-    fetch(`https://week-3-code-challenge-a1ff.onrender.com/posts/${postId}`, {
+    fetch(`https://week-3-code-challenge-1-bicj.onrender.com/posts/${postId}`, {
         method: "PATCH",
         headers: {
             "Content-Type": "application/json"
@@ -126,7 +126,7 @@ function updatePost(postId) {
 
 // Send a DELETE request to remove the post, then refresh the UI
 function deletePost(postId) {
-    fetch(`https://week-3-code-challenge-a1ff.onrender.com/posts/${postId}`, {
+    fetch(`https://week-3-code-challenge-1-bicj.onrender.com/posts/${postId}`, {
         method: "DELETE"
     })
     .then(() => {
